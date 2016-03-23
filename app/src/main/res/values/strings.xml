@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RFReader</string>
+    <string name="funct_title">Arduino Tag Reader</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="ip1">140</string>
+    <string name="ip2">115</string>
+    <string name="ip3">202</string>
+    <string name="ip4">179</string>
+    <string name="port">8700</string>
+    <string name="default_SP_ID">101502537</string>
+
+    <string name="attr_1">ID</string>
+    <string name="attr_2">Service Provider</string>
+    <string name="attr_3">Your Reader Key</string>
+
+    <string name="access">Get Reader Key</string>
+    <string name="start">Start</string>
+    <string name="read">READ</string>
+	<string name="write">WRITE</string>
+    <string name="update">UPDATE</string>
+    <string name="stop">STOP</string>
+	<string name="clear">CLEAR</string>
+    <string name="back">BACK</string>
+    <string name="about">About</string>
+    <string name="hint">Message for the RF Tag</string>
+
+    <string name="developer">Yu-Chang, Ho 何昱璋</string>
+    <string name="lab">WASN CSIE</string>
+    <string name="where">National Central University</string>
+
+</resources>

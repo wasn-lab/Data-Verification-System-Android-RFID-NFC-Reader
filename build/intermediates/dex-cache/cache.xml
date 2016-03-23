@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/yu-zhang/Documents/Codes/Workspaces/ADT/2014 NFC WASN NCU/NFCReader/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/yu-zhang/Documents/Codes/Workspaces/ADT/2014 NFC WASN NCU/NFCReader/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-2a905a2212b7d12407daa47bba1cd2dd8ac44381.jar" />
+    </item>
+    <item
+        jar="/Users/yu-zhang/Documents/Codes/Workspaces/ADT/2014 NFC WASN NCU/NFCReader/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/yu-zhang/Documents/Codes/Workspaces/ADT/2014 NFC WASN NCU/NFCReader/app/build/intermediates/pre-dexed/debug/classes-69d918aa259b5ff218c9b6d5e2bce0b4a12d2465.jar" />
+    </item>
+    <item
+        jar="/Users/yu-zhang/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/Users/yu-zhang/Documents/Codes/Workspaces/ADT/2014 NFC WASN NCU/NFCReader/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-443da2b834d881503cbf7ea09337053f77f5f700.jar" />
+    </item>
+    <item
+        jar="/Users/yu-zhang/Documents/Codes/Workspaces/ADT/2014 NFC WASN NCU/NFCReader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/yu-zhang/Documents/Codes/Workspaces/ADT/2014 NFC WASN NCU/NFCReader/app/build/intermediates/pre-dexed/debug/classes-3a750a5a2c60ef0a18504b98d60bfbe82ad1c22e.jar" />
+    </item>
+
+</items>

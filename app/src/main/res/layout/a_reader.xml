@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".A_Reader">
+
+    <LinearLayout
+        android:id="@+id/reader_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@color/orange"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:text="@string/funct_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/T_height"
+            android:layout_marginTop="@dimen/gap"
+            android:layout_marginBottom="@dimen/gap"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="@dimen/titleSize"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_list_r"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reader_top"
+        android:padding="@dimen/gap"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/write"
+            android:layout_width="@dimen/B_width"
+            android:layout_height="@dimen/B_height"
+            android:layout_weight="1"
+            android:text="@string/write"
+            android:textColor="@color/white"
+            android:textSize="@dimen/b_tSize"
+            android:background="@drawable/simple_bg_switcher"
+            android:onClick="Write"/>
+
+        <View
+            android:layout_width="@dimen/gap"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/read"
+            android:layout_width="@dimen/B_width"
+            android:layout_height="@dimen/B_height"
+            android:layout_weight="1"
+            android:text="@string/read"
+            android:textColor="@color/white"
+            android:textSize="@dimen/b_tSize"
+            android:background="@drawable/simple_bg_switcher"
+            android:onClick="Read"/>
+
+        <View
+            android:layout_width="@dimen/gap"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/button_update"
+            android:layout_width="@dimen/B_width"
+            android:layout_height="@dimen/B_height"
+            android:layout_weight="1"
+            android:text="@string/update"
+            android:textColor="@color/white"
+            android:textSize="@dimen/b_tSize"
+            android:background="@drawable/simple_bg_switcher"
+            android:onClick="Update"/>
+
+	    <View
+		    android:layout_width="@dimen/gap"
+		    android:layout_height="match_parent"/>
+
+	    <Button
+		    android:id="@+id/clear_r"
+		    android:layout_width="@dimen/B_width"
+		    android:layout_height="@dimen/B_height"
+		    android:layout_weight="1"
+		    android:text="@string/clear"
+		    android:textColor="@color/white"
+            android:textSize="@dimen/b_tSize"
+		    android:background="@drawable/simple_bg_switcher"
+		    android:onClick="clear"/>
+
+        <View
+            android:layout_width="@dimen/gap"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="@dimen/B_width"
+            android:layout_height="@dimen/B_height"
+            android:layout_weight="1"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="@dimen/b_tSize"
+            android:background="@drawable/simple_bg_switcher"
+            android:onClick="back"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/button_list_r"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/data_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/T_height"
+            android:layout_marginLeft="@dimen/gap"
+            android:layout_marginRight="@dimen/gap"
+            android:layout_marginBottom="@dimen/gap"
+
+            android:background="@color/black"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="@dimen/info_generalSize"
+            android:textColor="@color/white"
+            android:text="Set new information to Tag"/>
+
+        <EditText
+            android:id="@+id/new_info_to_tag"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/T_height"
+            android:gravity="center_horizontal|center_vertical"/>
+
+        <TextView
+            android:id="@+id/msg_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/T_height"
+            android:layout_marginLeft="@dimen/gap"
+            android:layout_marginRight="@dimen/gap"
+            android:layout_marginBottom="@dimen/gap"
+
+            android:background="@color/msg"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="@dimen/info_generalSize"
+            android:textColor="@color/white"
+            android:text="Operation Message"/>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/T_height"
+            android:layout_marginLeft="@dimen/gap"
+            android:layout_marginRight="@dimen/gap"
+            android:layout_marginBottom="@dimen/gap"
+
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="@dimen/info_generalSize"
+            android:textColor="@color/msg"/>
+
+        <TextView
+            android:id="@+id/tag_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/T_height"
+            android:layout_marginLeft="@dimen/gap"
+            android:layout_marginRight="@dimen/gap"
+            android:layout_marginBottom="@dimen/gap"
+
+            android:background="@color/msg"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="@dimen/info_generalSize"
+            android:textColor="@color/white"
+            android:text="Data Received from RF Tag"/>
+
+        <TextView
+            android:id="@+id/fromTag"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/T_height"
+            android:layout_marginLeft="@dimen/gap"
+            android:layout_marginRight="@dimen/gap"
+            android:layout_marginBottom="@dimen/gap"
+
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/info_generalSize"
+            android:textColor="@color/msg"
+            android:padding="@dimen/gap_Large"/>
+
+    </LinearLayout>
+    
+</RelativeLayout>

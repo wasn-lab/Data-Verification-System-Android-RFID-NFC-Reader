@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".A_Reader">
+
+    <LinearLayout
+        android:id="@+id/main_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:background="@color/orange"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:text="@string/funct_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap"
+            android:layout_marginBottom="@dimen/gap"
+            android:textSize="@dimen/titleSize"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/generalWidgetSize"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:text="DB IP: "
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/gap_medium"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/ip1"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/ip1"
+                android:textColor="@color/white"/>
+            <TextView
+                android:text="."
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:gravity="bottom"/>
+            <EditText
+                android:id="@+id/ip2"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/ip2"
+                android:textColor="@color/white"/>
+            <TextView
+                android:text="."
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:gravity="bottom"/>
+            <EditText
+                android:id="@+id/ip3"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/ip3"
+                android:textColor="@color/white"/>
+            <TextView
+                android:text="."
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:gravity="bottom"/>
+            <EditText
+                android:id="@+id/ip4"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/ip4"
+                android:textColor="@color/white"/>
+            <TextView
+                android:text=":"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/port"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/gap_medium"
+                android:gravity="center_horizontal|center_vertical"
+                android:hint="@string/port"
+                android:inputType="number"
+                android:text="@string/port"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/generalWidgetSize"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="SP Num:"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/gap_medium"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/sp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="@color/white"
+                android:text="@string/default_SP_ID"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_list_m"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_top"
+        android:padding="@dimen/gap"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/get_record"
+            android:layout_width="@dimen/B_width"
+            android:layout_height="@dimen/B_height"
+            android:layout_weight="1"
+            android:text="@string/access"
+            android:textColor="@color/white"
+            android:background="@drawable/simple_bg_switcher"
+            android:onClick="accessDB"/>
+
+        <View
+            android:layout_width="@dimen/gap"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/check"
+            android:layout_width="@dimen/B_width"
+            android:layout_height="@dimen/B_height"
+            android:layout_weight="5"
+            android:text="@string/start"
+            android:textColor="@color/white"
+            android:background="@drawable/simple_bg_switcher"
+            android:onClick="Start"/>
+
+        <View
+            android:layout_width="@dimen/gap"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/clear_m"
+            android:layout_width="@dimen/B_width"
+            android:layout_height="@dimen/B_height"
+            android:layout_weight="5"
+            android:text="@string/clear"
+            android:textColor="@color/white"
+            android:background="@drawable/simple_bg_switcher"
+            android:onClick="clear"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ID_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/gap"
+        android:layout_marginLeft="@dimen/gap"
+        android:layout_marginBottom="@dimen/gap"
+        android:layout_below="@+id/button_list_m"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/T_height"
+            android:layout_weight="9"
+            android:text="@string/attr_1"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@color/msg"
+            android:gravity="center_vertical|center_horizontal"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gap"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/t_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:padding="@dimen/gap_Large"
+            android:textSize="@dimen/info_generalSize"
+            android:textColor="@color/msg"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/SPname_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/gap"
+        android:layout_marginLeft="@dimen/gap"
+        android:layout_marginBottom="@dimen/gap"
+        android:layout_below="@+id/ID_table"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/T_height"
+            android:layout_weight="9"
+            android:text="@string/attr_2"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@color/msg"
+            android:gravity="center_vertical|center_horizontal"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gap"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/sp_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:padding="@dimen/gap_Large"
+            android:textSize="@dimen/info_generalSize"
+            android:textColor="@color/msg"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Key_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/gap"
+        android:layout_marginLeft="@dimen/gap"
+        android:layout_marginBottom="@dimen/gap"
+        android:layout_below="@+id/SPname_table"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/T_height"
+            android:layout_weight="9"
+            android:text="@string/attr_3"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@color/msg"
+            android:gravity="center_vertical|center_horizontal"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gap"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/reader_key"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:padding="@dimen/gap_Large"
+            android:textSize="@dimen/info_generalSize"
+            android:textColor="@color/msg"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+</RelativeLayout>

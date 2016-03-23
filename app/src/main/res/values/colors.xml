@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="orange">#FFA042</color>
+    <color name="navy">#ff002449</color>
+    <color name="navy_light">#BB003D79</color>
+    <color name="transparent">#00000000</color>
+    <color name="msg">#80000000</color>
+
+</resources>
